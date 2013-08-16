@@ -1,4 +1,4 @@
-Stopwords = require '../stopwords/stopwords.json'
+Stopwords = require '../../stopwords/stopwords.json'
 Stemmer = require('porter-stemmer').stemmer
 
 class Tokenizer

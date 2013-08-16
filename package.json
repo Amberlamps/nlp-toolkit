@@ -13,5 +13,12 @@
   },
   "devDependencies": {},
   "optionalDependencies": {},
-  "keywords": []
+  "keywords": [
+    "nlp",
+	"porter",
+	"stemmer",
+	"tokenize",
+	"tokenizer",
+	"stopwords"
+  ]
 }
