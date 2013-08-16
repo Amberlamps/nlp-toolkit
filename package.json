@@ -1,0 +1,15 @@
+{
+  "author": "Alexander Behrens",
+  "name": "alex-says-hello",
+  "description": "Just say hello",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amberlamps/nlp-toolkit"
+  },
+  "main": "./lib/main",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "keywords": []
+}
