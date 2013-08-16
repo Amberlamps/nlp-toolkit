@@ -1,14 +1,16 @@
 {
   "author": "Alexander Behrens",
-  "name": "alex-says-hello",
-  "description": "Just say hello",
+  "name": "nlp-toolkit",
+  "description": "A little helper module to execute nlp operations",
   "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Amberlamps/nlp-toolkit"
   },
-  "main": "./lib/main",
-  "dependencies": {},
+  "main": "./lib/index",
+  "dependencies": {
+    "porter-stemmer": "0.9.x"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "keywords": []
