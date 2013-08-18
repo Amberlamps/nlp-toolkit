@@ -14,11 +14,13 @@ There is a more mature node.js module for NLP out there, but as both NLP and nod
 	
 ## Tokenizer ##
 
-	> nlp.tokenize("That is a tokenizer.");
+	> var tokenizer = new nlp.Tokenizer();
+	> tokenizer.tokenize("That is a tokenizer.");
 	[ 'That', 'is', 'a', 'tokenizer' ]
 	
-	> nlp.tokenize("That is a tokenizer.", {
+	> var tokenizer = new nlp.Tokenizer({
 	    stopwords: 'english',
 		porter: true
-	  };
+	  });
+	> tokenizer.tokenize("That is a Tokenizer.");
 	'token'
