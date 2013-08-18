@@ -6,19 +6,19 @@ There is a more mature node.js module for NLP out there, but as both NLP and nod
 
 ## Installation ##
 
-´´´javascript
+```javascript
 npm install nlp-toolkit
-´´´
+```
 
 ## Initialization ##
 
-´´´javascript
+```javascript
 var nlp = require("nlp-toolkit");
-´´´
+```
 
 ## Tokenizer ##
 
-´´´javascript
+```javascript
 > var tokenizer = new nlp.Tokenizer();
 > tokenizer.tokenize("That is a tokenizer.");
 [ 'That', 'is', 'a', 'tokenizer' ]
@@ -29,7 +29,7 @@ var nlp = require("nlp-toolkit");
   });
 > tokenizer.tokenize("That is a Tokenizer.");
 'token'
-´´´
+```
 	
 ## Frequence Distribution ##
 
@@ -37,27 +37,27 @@ var nlp = require("nlp-toolkit");
 
 Empty frequency distribution:
 
-´´´javascript
+```javascript
 var freqdist = new nlp.FreqDist();
-´´´
+```
 	
 Frequency distribution on letter:
 
-´´´javascript
+```javascript
 var freqdist = new nlp.FreqDist("Frequency distribution on letters");
-´´´
+```
 	
 Frequency distribution on tokens:
 
-´´´javascript
+```javascript
 var freqdist = new nlp.FreqDist([ "Frequency", "distribution", "on", "letters" ]);
-´´´
+```
 	
 Frequency distrubtion on texts:
 
-´´´javascript
+```javascript
 var freqdist = new nlp.FreqDist([[ "Frequence", "distribution" ], [ "on", "texts" ]]);
-´´´
+```
 	
 ### Functions ###
 
