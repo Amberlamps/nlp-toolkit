@@ -1,3 +1,5 @@
 module.exports =
 
-	tokenizer: require './tokenizer'
+	Tokenizer: require './tokenizer'
+	
+	FreqDist: require './freqdist'
