@@ -6,18 +6,34 @@
 /**
  * MODULES.
  */
-var assert = require('assert');
+var assert = require('chai').assert;
+var fs = require('fs');
+var NlpToolkit = require('../index.js');
+var es = require('event-stream');
+var path = require('path');
 
 
 /**
  * TESTS.
  */
-var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
+describe('nlp.sentences', function() {
+  describe('# of sentences', function () {
+    it('should have 7 sentences', function (done) {
+      var nlp = NlpToolkit();
+      var sentences = [];
+      fs.createReadStream(path.resolve(__dirname, './texts.txt'))
+      .pipe(es.split())
+      .pipe(nlp.sentences())
+      .on('data', function (sentence) {
+        sentences[sentences.length] = sentence;
+      })
+      .on('end', function () {
+        assert.lengthOf(sentences, 7, 'array has length of 7');
+        done();
+      })
+      .on('error', function (err) {
+        throw err;
+      });
     });
   });
 });
