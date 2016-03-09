@@ -1,24 +1,20 @@
 {
-  "author": "Alexander Behrens",
-  "name": "nlp-toolkit",
-  "description": "A little helper module to execute nlp operations",
-  "version": "0.1.1",
-  "repository": {
-    "type": "git",
+  "author": "Alexander Behrens <alexander.behrens.84@gmail.com>",
     "url": "https://github.com/Amberlamps/nlp-toolkit"
   },
-  "main": "./lib/index",
+  "main": "index.js",
   "dependencies": {
-    "porter-stemmer": "0.9.x"
   },
   "devDependencies": {},
-  "optionalDependencies": {},
   "keywords": [
     "nlp",
-	"porter",
-	"stemmer",
-	"tokenize",
-	"tokenizer",
-	"stopwords"
+  	"porter",
+  	"stemmer",
+  	"tokenize",
+  	"tokenizer",
+  	"stopwords",
+    "tfidf",
+    "idf",
+    "frequency"
   ]
 }
