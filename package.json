@@ -1,18 +1,23 @@
 {
   "author": "Alexander Behrens <alexander.behrens.84@gmail.com>",
-    "url": "https://github.com/Amberlamps/nlp-toolkit"
-  },
+  "url": "https://github.com/Amberlamps/nlp-toolkit",
   "main": "index.js",
   "dependencies": {
+    "event-stream": "^3.3.2",
+    "snowball-stemmer.jsx": "^0.2.3",
+    "through2": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
   "keywords": [
     "nlp",
-  	"porter",
-  	"stemmer",
-  	"tokenize",
-  	"tokenizer",
-  	"stopwords",
+    "porter",
+    "stemmer",
+    "tokenize",
+    "tokenizer",
+    "stopwords",
     "tfidf",
     "idf",
     "frequency"
