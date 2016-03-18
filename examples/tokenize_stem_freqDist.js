@@ -13,7 +13,7 @@ var es = require('event-stream');
 /**
  * NLP.
  */
-fs.createReadStream('./pride_prejudice.txt')
+fs.createReadStream('./texts/pride_prejudice.txt')
 .pipe(es.split())
 .pipe(nlp.tokenizer())
 .pipe(nlp.stopwords({

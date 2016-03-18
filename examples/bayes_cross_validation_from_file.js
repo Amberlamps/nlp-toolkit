@@ -16,7 +16,7 @@ var es = require('event-stream');
 /**
  * NLP.
  */
-fs.createReadStream('./sentiment.txt')
+fs.createReadStream('./texts/sentiment.txt')
 .pipe(es.split())
 .pipe(nlp.prepare(function (sentence) {
   var parts = sentence.split('|');
