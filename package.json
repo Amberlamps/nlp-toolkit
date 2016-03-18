@@ -1,6 +1,15 @@
 {
+  "name": "nlp-toolkit",
   "author": "Alexander Behrens <alexander.behrens.84@gmail.com>",
+  "description": "This module covers some basic nlp principles and implementations. Every implementation in this module is written as stream to only hold that data in memory that is currently processed at any step.",
   "url": "https://github.com/Amberlamps/nlp-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amberlamps/nlp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amberlamps/nlp-toolkit/issues"
+  },
   "main": "index.js",
   "dependencies": {
     "bayes": "0.0.4",
@@ -24,6 +33,14 @@
     "stopwords",
     "tfidf",
     "idf",
-    "frequency"
-  ]
+    "frequency",
+    "stream",
+    "frequency distribution",
+    "cross validation",
+    "term frequency"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "licence": "MIT"
 }
