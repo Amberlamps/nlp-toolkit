@@ -17,7 +17,9 @@ fs.createReadStream('./texts/pride_prejudice.txt')
 .pipe(es.split())
 .pipe(nlp.tokenizer())
 .pipe(nlp.stopwords({
-  words: ['mr', 'mrs', 'miss']
+  additionalWords: {
+    all: ['mr', 'mrs', 'miss']
+  }
 }))
 .pipe(nlp.stemmer())
 .pipe(nlp.frequency())
