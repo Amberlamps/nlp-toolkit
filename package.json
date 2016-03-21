@@ -23,7 +23,7 @@
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "keywords": [
     "nlp",
     "porter",
