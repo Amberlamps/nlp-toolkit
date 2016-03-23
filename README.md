@@ -106,7 +106,7 @@ Stopwords also work in a non-stream context:
 var tokens = nlp.stemmer(sentence, options);
 ```
 
-This module uses the stemmer implementation of [Snowball-Stemmer](https://github.com/shibukawa/snowball-stemmer.jsx)
+This module uses the stemmer implementation of [Snowball-Stemmer](https://github.com/shibukawa/snowball-stemmer.jsx).
 
 ### Frequency Distribution ###
 
