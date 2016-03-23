@@ -1,1 +1,4 @@
 positive|amazing, awesome movie!! Yeah!! Oh boy.
+positive|Sweet, this is incredibly, amazing, perfect, great!!
+negative|terrible, shitty thing. Damn. Sucks!!
+positive|awesome, cool, amazing!! Yay.

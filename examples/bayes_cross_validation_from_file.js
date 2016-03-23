@@ -31,8 +31,11 @@ fs.createReadStream('./texts/sentiment.txt')
 .pipe(nlp.divide({
   sets: [1, 1, 1, 1]
 }))
-.on('data', function (sentence) {
-  console.log(sentence);
+.pipe(nlp.crossValidation({
+  classifiers: [nlp.classifiers.bayes]
+}))
+.on('data', function (data) {
+  console.log(nlp.calculate.accuracy(data));
 })
 .on('error', function (err) {
   console.error(err);
