@@ -82,7 +82,7 @@ Stopwords also work in a non-stream context:
 
 ```javascript
 nlp.stopwords(sentence, options)
-.then(function (tokens) {}})
+.then(function (tokens) {})
 .catch(function (err) { console.error(err); });
 ```
 
